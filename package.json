@@ -1,0 +1,18 @@
+{
+  "name": "bim-3d-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plataforma web BIM 3D com Autodesk APS Viewer, Express, React e MongoDB.",
+  "scripts": {
+    "dev": "npm run dev --workspace backend & npm run dev --workspace frontend",
+    "build": "npm run build --workspace frontend",
+    "start": "npm run start --workspace backend",
+    "lint": "npm run lint --workspaces --if-present",
+    "dev:backend": "npm run dev --workspace backend",
+    "dev:frontend": "npm run dev --workspace frontend"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
